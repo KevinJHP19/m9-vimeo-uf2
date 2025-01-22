@@ -1,0 +1,12 @@
+
+
+
+#imgplataformas img {
+    width: 220px;
+    height: 100%;
+    margin: 20px;
+}
+#textoplataformas h3{
+    max-block-size: 50px;
+    writing-mode: horizontal-tb;
+}
