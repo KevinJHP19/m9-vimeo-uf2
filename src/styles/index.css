@@ -10,64 +10,225 @@
     max-block-size: 50px;
     writing-mode: horizontal-tb;
 }
-.conflecha{
-    background-color: rgb(0, 170, 207);
-    margin: 4px;
+.btnplanes{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+.nav-item-dropdown,.nav-item{    
+    font-weight: bold;
+}
+
+.btnplanes .over2{
+    margin-right: 10px;
+}
+
+.titulo p {
+    width: 100%;
+    display: block;
+    text-align: center; /* Opcional, si deseas centrar el texto */
+    font-size: 5rem;
+    color: #333;
+    font-weight: bold;
+
+}
+.textobanner{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    
+    
+}
+
+/*button unirse nav */
+.conflecha {
+    background-color: rgb(12, 210, 255);
+    
+    width: 48px;
+    height: 28px;
     overflow: hidden;
-    border: 2px solid;
-    transform: scale() ;
+    margin-left: 10px;
+    padding: 5px;
     display: flex;
     border-radius: 5px;
-    z-index: 1;
-}
-.conflecha span{ 
-    
-    
-    padding: 0 8px 0 8px;
-    transform: translateX(-100%);
-    transition: transform 0.5s; 
-      
 }
 
-.unirse{
+.conflecha span {
+    position: relative;
+    width: 56px;
+    height: 28px;
+    padding: 0 1px;
+    font-size: 18px;
+    margin: 0 10px 0 0 ;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+}
+
+.unirse {
     position: absolute;
     display: flex;
-    width: 100px;
+    
     margin: 4px;
     align-items: center;
+    z-index: 1;
 }
-.over{
+
+.over {
     position: relative;
-    width: 150px;
-    height: 100px;
+    width: 156px;
+    height: 56px;
     padding: 10px;
-    background-color: grey;
+    background-color: rgb(223, 228, 234);
     border-radius: 10px;
     overflow: hidden;
-    
 }
-
-.azul:hover > span{
-    
-    transform: translateX(0);
-    transition: 0.5s;
-    background-color: rgb(0, 208, 255);
-}
-
 
 .azul {
     position: absolute;
-    width: 150px;
+    width: 157px;
     height: 100px;
     background-color: rgb(0, 208, 255);
-    margin: -10px;
+    margin: -11px;
     border-radius: 10px;
-    transform: translatex(200px);
+    transform: translateX(200px);
+    transition: transform 1s;
+}
+
+.over:hover > .azul {
+    transform: translateX(0);
+    transition: transform 0.5s;
+}
+.over:hover .conflecha span {
+    transform: translateX(0);
+    margin: 0 3px;
+    transition: 0.5s;
+    margin: 0 30px 0 10px;
+    
+}
+.over:hover .conflecha{
+    background-color: rgb(4, 164, 212);
     transition: 1s;
 }
-.over:hover > .azul{
+
+/*button verplanes */
+
+.over2,.over3{
+    border: 2px solid;
+    position: relative;
+    width: 200px;
+    height: 56px;
+    padding: 10px;
+    background-color:  rgb(0, 208, 255);
+    border-radius: 10px;
+    overflow: hidden;
     
+
+}
+.over3{
+    background-color: rgb(223, 228, 234) ;
+}
+.azuloscuro{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(4, 164, 212);
+    margin: -11px;
+    border-radius: 10px;
+    transform: translateX(200px);
+    transition: transform 1s;
+}
+.blanco{
+    position: absolute;
+    width: 257px;
+    height: 100px;
+    background-color: rgb(0, 208, 255);
+    margin: -11px;
+    border-radius: 10px;
+    transform: translateX(200px);
+    transition: transform 1s;
+}
+.conflecha2{
+    background-color: rgb(4, 164, 212);
+    
+    width: 48px;
+    height: 28px;
+    overflow: hidden;
+    margin-left: 10px;
+    padding: 5px;
+    display: flex;
+    border-radius: 5px;
+}
+.conflecha3{
+    background-color: rgb(255, 255, 255);
+    
+    width: 48px;
+    height: 28px;
+    overflow: hidden;
+    margin-left: 10px;
+    padding: 5px;
+    display: flex;
+    border-radius: 5px;
+}
+.conflecha3 span {
+    position: relative;
+    width: 56px;
+    height: 28px;
+    padding: 0 1px;
+    font-size: 18px;
+    margin: 0 10px 0 0 ;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+}
+.conflecha2 span {
+    position: relative;
+    width: 56px;
+    height: 28px;
+    padding: 0 1px;
+    font-size: 18px;
+    margin: 0 10px 0 0 ;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+}
+.over2:hover > .azuloscuro {
     transform: translateX(0);
+    transition: transform 0.5s;
+}
+
+.over2:hover > .conflecha2{
+    background-color: rgb(0, 208, 255);
+    transition: 1s;
+}
+.over3:hover > .blanco{
+    transform: translateX(0);
+    transition: transform 0.5s;
+}
+.over2:hover > .conflecha2 span {
+    transform: translateX(0);
+    margin: 0 30px 0 10px; /* Mantener solo una declaración de margin */
     transition: 0.5s;
- 
+}
+
+.over3:hover > .conflecha3 span {
+    transform: translateX(0);
+    margin: 0 30px 0 10px; /* Mantener solo una declaración de margin */
+    transition: 0.5s;
+}
+.over3:hover > .conflecha3{
+    background-color: rgb(4, 164, 212);
+    transition: 1s;
+}
+
+
+
+.bannerimagen{
+    position: relative;
+    overflow: hidden;
+}
+video{
+    position: absolute;
+    width: 420px;
+    top: 20%;
+    left: 35%;
 }
