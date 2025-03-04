@@ -1,15 +1,25 @@
-
-
-
 #imgplataformas img {
     width: 220px;
     height: 100%;
     margin: 20px;
 }
-#textoplataformas h3{
-    max-block-size: 50px;
-    writing-mode: horizontal-tb;
+#Banner{
+    padding-top: 100px;
 }
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Inicialmente semitransparente */
+    backdrop-filter: blur(55px); /* Efecto de desenfoque */
+    transition: background-color 0.3s ease-in-out;
+    
+
+
+
+  }
+
 .btnplanes{
     display: flex;
     justify-content: center;
@@ -34,6 +44,8 @@
 
 }
 .textobanner{
+    width: 100%;
+    display: block;
     font-size: 1.2rem;
     text-align: center;
     padding: 20px;
@@ -45,7 +57,6 @@
 /*button unirse nav */
 .conflecha {
     background-color: rgb(12, 210, 255);
-    
     width: 48px;
     height: 28px;
     overflow: hidden;
@@ -53,6 +64,7 @@
     padding: 5px;
     display: flex;
     border-radius: 5px;
+    transition: 0.5s;
 }
 
 .conflecha span {
@@ -96,7 +108,7 @@
     transition: transform 1s;
 }
 
-.over:hover > .azul {
+.over:hover .azul {
     transform: translateX(0);
     transition: transform 0.5s;
 }
@@ -115,7 +127,7 @@
 /*button verplanes */
 
 .over2,.over3{
-    border: 2px solid;
+    
     position: relative;
     width: 200px;
     height: 56px;
@@ -123,8 +135,6 @@
     background-color:  rgb(0, 208, 255);
     border-radius: 10px;
     overflow: hidden;
-    
-
 }
 .over3{
     background-color: rgb(223, 228, 234) ;
@@ -151,7 +161,6 @@
 }
 .conflecha2{
     background-color: rgb(4, 164, 212);
-    
     width: 48px;
     height: 28px;
     overflow: hidden;
@@ -177,7 +186,7 @@
     height: 28px;
     padding: 0 1px;
     font-size: 18px;
-    margin: 0 10px 0 0 ;
+    margin: 0 10px 0 0  ;
     transform: translateX(-100%);
     transition: transform 0.5s;
 }
@@ -191,44 +200,208 @@
     transform: translateX(-100%);
     transition: transform 0.5s;
 }
-.over2:hover > .azuloscuro {
+
+.over2:hover .azuloscuro {
     transform: translateX(0);
     transition: transform 0.5s;
 }
 
-.over2:hover > .conflecha2{
+.over2:hover .conflecha2 {
     background-color: rgb(0, 208, 255);
     transition: 1s;
 }
-.over3:hover > .blanco{
+
+.over2:hover .conflecha2 span {
+    transform: translateX(0);
+    margin: 0 3px;
+    margin: 0 30px 0 10px;
+    transition: 0.5s;
+}
+
+.over3:hover .blanco {
     transform: translateX(0);
     transition: transform 0.5s;
 }
-.over2:hover > .conflecha2 span {
-    transform: translateX(0);
-    margin: 0 30px 0 10px; /* Mantener solo una declaración de margin */
-    transition: 0.5s;
-}
 
-.over3:hover > .conflecha3 span {
-    transform: translateX(0);
-    margin: 0 30px 0 10px; /* Mantener solo una declaración de margin */
-    transition: 0.5s;
-}
-.over3:hover > .conflecha3{
-    background-color: rgb(4, 164, 212);
+.over3:hover .conflecha3 {
+    background-color: rgb(4, 164, 212) !important;
     transition: 1s;
 }
 
+.over3:hover .conflecha3 span {
+    transform: translateX(0);
+    margin: 0 3px;
+    margin: 0 30px 0 10px;
+    transition: 0.5s;
+}
 
-
-.bannerimagen{
+.bannerimagen {
     position: relative;
     overflow: hidden;
 }
-video{
+
+video {
     position: absolute;
     width: 420px;
     top: 20%;
     left: 35%;
+}
+/*seccion demostracion */
+#demostracion{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+.tituloseccion p{
+    font-size: 45px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+.textobanner{
+    font-size: 19px;
+    margin-top: 10px;
+    display: block;
+    text-align: start;
+    margin-left: 130px;
+    word-spacing: 1px;
+    margin-top: -20px;
+    margin-bottom: -15px;
+}
+.over4{
+    margin-left: 150px;
+    color: black;
+    position: relative;
+    width: 290px;
+    height: 56px;
+    padding: 10px;
+    background-color:  rgb(0, 208, 255);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.azuloscuro2{
+    position: absolute;
+    width: 290px;
+    height: 100px;
+    background-color: rgb(0, 170, 207);
+    margin: -11px;
+    border-radius: 10px;
+    transform: translateX(400px);
+    transition: transform 1s;
+}
+.conflecha4{
+    background-color: rgb(0, 170, 207);
+    width: 48px;
+    height: 28px;
+    overflow: hidden;
+    margin-left: 10px;
+    padding: 5px;
+    display: flex;
+    border-radius: 5px;
+}
+.conflecha4 span {
+    position: relative;
+    width: 56px;
+    height: 28px;
+    padding: 0 1px;
+    font-size: 18px;
+    margin: 0 10px 0 0 ;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+}
+.over4:hover .azuloscuro2 {
+    transform: translateX(0);
+    transition: transform 0.5s;
+}
+
+.over4:hover .conflecha4 {
+    background-color: rgb(0, 208, 255);
+    transition: 1s;
+}
+
+.over4:hover .conflecha4 span {
+    transform: translateX(0);
+    margin: 0 3px;
+    margin: 0 30px 0 10px;
+    transition: 0.5s;
+}
+/*plataformas */
+#imgplataformas img {
+    width: 220px;
+    height: 100%;
+    margin: 20px;
+}
+#textoplataformas p{
+    width: 100%;
+    
+    font-size: 33px;
+    font-weight: bold !important;
+    text-align: center;
+}
+/*caso de uso */
+.titulocaso{
+    font-size: 40px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    word-spacing: 1px;
+}
+.row img {
+    height: 486px;
+    box-shadow: black 15px;
+    
+    
+    
+    
+}
+#card1:hover img{
+    display: block;
+    transform: scalex(2);
+    transition: transform 0.5s;
+    transform-origin: left;
+}
+#card1:hover .minidescipcion:nth-child(1){
+    width: 200%;
+    
+    background-color: red;
+}
+#card2:hover{
+    transform: scalex(2);
+    transition: transform 0.5s;
+    
+
+}
+#card3:hover{
+    transform: scalex(2);
+    transition: transform 0.5s;
+    transform-origin: right;
+
+}
+#card1:hover .minidescripcion{
+    flex-wrap: wrap;
+    width: 200%;
+    
+    transition: 1.5s;
+}
+#card1:hover .titulo{
+    width: 200%;
+    flex-wrap: wrap;
+
+}
+.minidescipcion .titulo,.info{
+    text-align: start;
+    
+
+}
+.minidescipcion{
+    border: solid 1px;
+}
+.titulo{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: start;
 }
