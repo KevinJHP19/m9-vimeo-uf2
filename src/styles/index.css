@@ -405,3 +405,14 @@ video {
     margin-bottom: 5px;
     text-align: start;
 }
+
+
+.secciones  a:hover{
+    color: rgb(0, 208, 255);
+    transition: 0.2s;
+
+}
+#redesterminos a:hover{
+    color: rgb(0, 208, 255);
+    transition: 0.2s;
+}
