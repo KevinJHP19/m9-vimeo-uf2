@@ -509,34 +509,47 @@ margin-left: -100px !important;
     top: 15%;
     right: 27%;
 }
-
-/*seccion demostracion */
-#demostracion {
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-
-.tituloseccion p {
-    font-size: 45px;
-    margin-top: 10px;
-    display: block;
-    text-align: center;
-}
-
 .textobanner {
     font-size: 19px;
     margin-top: 10px;
     display: block;
     text-align: start;
-    margin-left: 130px;
+    margin-left: 120px;
     word-spacing: 1px;
     margin-top: -20px;
     margin-bottom: -15px;
 }
+/*seccion demostracion */
+#demostracion {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 367px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 2.0s;
+}
+
+.tituloseccion p {
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.textodemostracion p{
+    font-size: 19px;
+   font-weight: 470;
+    display: block;
+    text-align: start;
+    margin-left: 120px ;
+    
+    
+}
 
 .over4 {
-    margin-left: 150px;
+    margin-left: 170px;
     color: black;
     position: relative;
     width: 290px;
