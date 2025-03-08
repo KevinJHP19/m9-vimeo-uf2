@@ -444,14 +444,28 @@ margin-left: -100px !important;
 
 .bannerimagen {
     position: relative;
-    overflow: hidden;
+    margin-top: 20px;
 }
 
-video {
+.bannerimagen img, .bannerimagen video {
+    
+    width: 100%;
+    height: auto;
+    
+}
+
+.bannerimagen img {
+    object-fit: cover;
+}
+
+.bannerimagen video {
     position: absolute;
-    width: 420px;
-    top: 20%;
-    left: 35%;
+    width: 45%;
+    height: 45%;
+    object-fit: cover;
+    z-index: 2;
+    top: 15%;
+    right: 27%;
 }
 
 /*seccion demostracion */
