@@ -3,35 +3,236 @@
     height: 100%;
     margin: 20px;
 }
-#Banner{
+
+#Banner {
     padding-top: 100px;
 }
-
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 0 20px;
+}
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8); /* Inicialmente semitransparente */
+    background-color: transparent; /* Cambiado a transparente */
     backdrop-filter: blur(55px); /* Efecto de desenfoque */
     transition: background-color 0.3s ease-in-out;
-    
-
-
-
-  }
-
-.btnplanes{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    
+    z-index: 1050;
+    text-align: center;
 }
-.nav-item-dropdown,.nav-item{    
+
+.nav-item-dropdown, .nav-item {
     font-weight: bold;
 }
 
-.btnplanes .over2{
+.nav-link i {
+    margin-left: 10px;
+}
+
+nav a:hover i {
+    transform: rotate(180deg);
+    transition: 0.5s ease-in-out;
+}
+.dropdown-menu .nav-link:hover{
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+}
+
+nav  .nav-link {
+    border-radius: 10px;
+}
+.navbar-nav .nav-item.show .dropdown-menu {
+    display: block !important;
+    opacity: 5 !important;
+}
+nav  ul li .nav-link:hover {
+    background-color: rgb(227, 228, 228);
+    transition: 0.5s;
+}
+.d-flex a:hover{
+    background-color: rgb(241, 245, 249) !important;
+    transition: 0.5s;
+}
+.d-flex a:hover i{
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+
+}
+nav i{
+    width: 20px !important;
+    height: 20px !important;
+}
+
+
+
+.dropdown-menu {
+    display: none; /* Ocultar por defecto */
+    width: 1300px; /* Ajustar el ancho automáticamente */
+    background-color: none !important;
+    border-radius: 20px !important;
+
+    
+    margin-top: 20px !important;
+    padding: 20px !important;
+margin-left: -100px !important;
+    
+ 
+}
+
+
+
+
+.productos li {
+    display: flex;
+    align-items: center;
+}
+
+.productos:hover, .productos2:hover, .productos3:hover, .productos4:hover {
+    background-color: rgb(241, 245, 249);
+    transition: 0.3s;
+}
+
+.productos, .productos2, .productos3, .productos4 {
+    height: 100%;
+    width: 100% !important;
+    gap: 20px;
+    padding: 50px 30px 20px 30px;
+    border-radius: 10px;
+}
+.productos .navlink:hover, .productos2 .navlink:hover, .productos3 .navlink:hover, .productos4 .navlink:hover{
+    background-color: rgb(241, 245, 249) !important;
+    
+}
+
+.productos,.productos2,.productos3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.productos i, .productos2 i, .productos3 i, .productos4 i {
     margin-right: 10px;
+}
+
+.productos a:hover span,
+.productos2 a:hover span,
+.productos3 a:hover span,
+.productos4 a:hover span {
+    color: rgb(0, 208, 255);
+    transition: 0.3s;
+}
+/* nav soluciones */
+#soluciones .dropdown-menu{
+    margin-left: -250px !important;
+    
+
+}
+#soluciones .dropdown-menu .d-flex{
+    margin-left: 0 !important;
+    
+    width: 100%;
+    gap: 100px;
+}
+#soluciones a:hover i{
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+
+}
+
+#soluciones a:hover i {
+    transform: rotate(180deg);
+    transition: 0.5s ease-in-out;
+}
+#soluciones .d-flex a:hover i{
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+
+}
+#soluciones a:hover{
+    background-color: rgb(241, 245, 249)!important;
+}
+
+.soluciones a:hover span,
+ .soluciones2 a:hover span,
+ .soluciones3 a:hover span{
+    color: rgb(0, 208, 255);
+    transition: 0.3s;
+ }
+ .soluciones:hover,
+ .soluciones2:hover,
+ .soluciones3:hover {
+    background-color: rgb(241, 245, 249);
+    transition: 0.3s;
+}
+.soluciones,
+ .soluciones2,
+ .soluciones3 {
+    height: 100%;
+    width: 100%;     
+    padding: 50px;
+    border-radius: 20px;
+}
+.soluciones i,
+ .soluciones2 i,
+ .soluciones3 i {
+    margin-right: 10px;
+}
+.soluciones3 h4{
+    margin-top: 20px;
+}
+/*nav conocer */
+#conocer .dropdown-menu{
+    margin-left: -350px !important;
+    
+
+}
+.conocer3 {
+    position: relative;
+}
+
+.conocer3 .btn-icon {
+    position: absolute;
+    width: 65px;
+    height: 45px;
+    top: 50%;
+    
+    left: 15%;
+    background-color: rgb(0, 208, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 25%;
+    padding: 10px;
+    
+}
+
+.conocer3 {
+    height: 100%;
+    width: 100%;     
+    padding: 50px;
+    border-radius: 20px;
+}
+.conocer3:hover{
+    background-color: rgb(241, 245, 249);
+    transition: 0.3s;
+}
+
+/*banner*/
+.btnplanes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btnplanes .over2 {
+    margin-right: 10px;
+}
+
+#Banner .btnplanes .over2,
+#Banner .btnplanes .over3 {
+    z-index: 1000; /* Asegúrate de que el valor sea menor que el del menú de navegación */
 }
 
 .titulo p {
@@ -41,17 +242,15 @@
     font-size: 5rem;
     color: #333;
     font-weight: bold;
-
 }
-.textobanner{
+
+.textobanner {
     width: 100%;
     display: block;
     font-size: 1.2rem;
     text-align: center;
     padding: 20px;
     font-weight: 500;
-    
-    
 }
 
 /*button unirse nav */
@@ -66,6 +265,9 @@
     border-radius: 5px;
     transition: 0.5s;
 }
+#derechanav{
+    align-items: center;
+}
 
 .conflecha span {
     position: relative;
@@ -73,7 +275,7 @@
     height: 28px;
     padding: 0 1px;
     font-size: 18px;
-    margin: 0 10px 0 0 ;
+    margin: 0 10px 0 0;
     transform: translateX(-100%);
     transition: transform 0.5s;
 }
@@ -81,10 +283,9 @@
 .unirse {
     position: absolute;
     display: flex;
-    
     margin: 4px;
     align-items: center;
-    z-index: 1;
+    z-index: 3;
 }
 
 .over {
@@ -95,6 +296,7 @@
     background-color: rgb(223, 228, 234);
     border-radius: 10px;
     overflow: hidden;
+    z-index: 2 !important;
 }
 
 .azul {
@@ -112,34 +314,35 @@
     transform: translateX(0);
     transition: transform 0.5s;
 }
+
 .over:hover .conflecha span {
     transform: translateX(0);
     margin: 0 3px;
     transition: 0.5s;
     margin: 0 30px 0 10px;
-    
 }
-.over:hover .conflecha{
+
+.over:hover .conflecha {
     background-color: rgb(4, 164, 212);
     transition: 1s;
 }
 
 /*button verplanes */
-
-.over2,.over3{
-    
+.over2, .over3 {
     position: relative;
-    width: 200px;
+    width: 199px;
     height: 56px;
-    padding: 10px;
-    background-color:  rgb(0, 208, 255);
+    padding: 11px;
+    background-color: rgb(0, 208, 255);
     border-radius: 10px;
     overflow: hidden;
 }
-.over3{
-    background-color: rgb(223, 228, 234) ;
+
+.over3 {
+    background-color: rgb(223, 228, 234);
 }
-.azuloscuro{
+
+.azuloscuro {
     position: absolute;
     width: 200px;
     height: 100px;
@@ -149,7 +352,8 @@
     transform: translateX(200px);
     transition: transform 1s;
 }
-.blanco{
+
+.blanco {
     position: absolute;
     width: 257px;
     height: 100px;
@@ -159,7 +363,8 @@
     transform: translateX(200px);
     transition: transform 1s;
 }
-.conflecha2{
+
+.conflecha2 {
     background-color: rgb(4, 164, 212);
     width: 48px;
     height: 28px;
@@ -169,9 +374,9 @@
     display: flex;
     border-radius: 5px;
 }
-.conflecha3{
+
+.conflecha3 {
     background-color: rgb(255, 255, 255);
-    
     width: 48px;
     height: 28px;
     overflow: hidden;
@@ -180,23 +385,25 @@
     display: flex;
     border-radius: 5px;
 }
+
 .conflecha3 span {
     position: relative;
     width: 56px;
     height: 28px;
     padding: 0 1px;
     font-size: 18px;
-    margin: 0 10px 0 0  ;
+    margin: 0 10px 0 0;
     transform: translateX(-100%);
     transition: transform 0.5s;
 }
+
 .conflecha2 span {
     position: relative;
     width: 56px;
     height: 28px;
     padding: 0 1px;
     font-size: 18px;
-    margin: 0 10px 0 0 ;
+    margin: 0 10px 0 0;
     transform: translateX(-100%);
     transition: transform 0.5s;
 }
@@ -246,20 +453,22 @@ video {
     top: 20%;
     left: 35%;
 }
+
 /*seccion demostracion */
-#demostracion{
+#demostracion {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-
 }
-.tituloseccion p{
+
+.tituloseccion p {
     font-size: 45px;
     margin-top: 10px;
     display: block;
     text-align: center;
 }
-.textobanner{
+
+.textobanner {
     font-size: 19px;
     margin-top: 10px;
     display: block;
@@ -269,19 +478,20 @@ video {
     margin-top: -20px;
     margin-bottom: -15px;
 }
-.over4{
+
+.over4 {
     margin-left: 150px;
     color: black;
     position: relative;
     width: 290px;
     height: 56px;
     padding: 10px;
-    background-color:  rgb(0, 208, 255);
+    background-color: rgb(0, 208, 255);
     border-radius: 10px;
     overflow: hidden;
 }
 
-.azuloscuro2{
+.azuloscuro2 {
     position: absolute;
     width: 290px;
     height: 100px;
@@ -291,7 +501,8 @@ video {
     transform: translateX(400px);
     transition: transform 1s;
 }
-.conflecha4{
+
+.conflecha4 {
     background-color: rgb(0, 170, 207);
     width: 48px;
     height: 28px;
@@ -301,16 +512,18 @@ video {
     display: flex;
     border-radius: 5px;
 }
+
 .conflecha4 span {
     position: relative;
     width: 56px;
     height: 28px;
     padding: 0 1px;
     font-size: 18px;
-    margin: 0 10px 0 0 ;
+    margin: 0 10px 0 0;
     transform: translateX(-100%);
     transition: transform 0.5s;
 }
+
 .over4:hover .azuloscuro2 {
     transform: translateX(0);
     transition: transform 0.5s;
@@ -327,21 +540,23 @@ video {
     margin: 0 30px 0 10px;
     transition: 0.5s;
 }
+
 /*plataformas */
 #imgplataformas img {
     width: 220px;
     height: 100%;
     margin: 20px;
 }
-#textoplataformas p{
+
+#textoplataformas p {
     width: 100%;
-    
     font-size: 33px;
     font-weight: bold !important;
     text-align: center;
 }
+
 /*caso de uso */
-.titulocaso{
+.titulocaso {
     font-size: 40px;
     margin-top: 10px;
     display: block;
@@ -349,57 +564,55 @@ video {
     font-weight: bold;
     word-spacing: 1px;
 }
+
 .row img {
     height: 486px;
     box-shadow: black 15px;
-    
-    
-    
-    
 }
-#card1:hover img{
+
+#card1:hover img {
     display: block;
     transform: scalex(2);
     transition: transform 0.5s;
     transform-origin: left;
 }
-#card1:hover .minidescipcion:nth-child(1){
+
+#card1:hover .minidescipcion:nth-child(1) {
     width: 200%;
-    
     background-color: red;
 }
-#card2:hover{
+
+#card2:hover {
     transform: scalex(2);
     transition: transform 0.5s;
-    
-
 }
-#card3:hover{
+
+#card3:hover {
     transform: scalex(2);
     transition: transform 0.5s;
     transform-origin: right;
-
 }
-#card1:hover .minidescripcion{
+
+#card1:hover .minidescripcion {
     flex-wrap: wrap;
     width: 200%;
-    
     transition: 1.5s;
 }
-#card1:hover .titulo{
+
+#card1:hover .titulo {
     width: 200%;
     flex-wrap: wrap;
-
 }
-.minidescipcion .titulo,.info{
+
+.minidescipcion .titulo, .info {
     text-align: start;
-    
-
 }
-.minidescipcion{
+
+.minidescipcion {
     border: solid 1px;
 }
-.titulo{
+
+.titulo {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
@@ -410,15 +623,17 @@ video {
 footer {
     padding-bottom: 30px;
 }
-#probar a:hover{
+
+#probar a:hover {
     color: rgb(0, 208, 255);
     transition: 0.2s;
-
 }
-#atencion span{
+
+#atencion span {
     text-wrap: wrap;
     width: 10px;
 }
+
 .conflecha5 {
     background-color: rgb(4, 164, 212);
     width: 48px;
@@ -437,13 +652,11 @@ footer {
     height: 28px;
     padding: 0 1px;
     font-size: 18px;
-    margin: 0 10px 0 0 ;
+    margin: 0 10px 0 0;
     transform: translateX(-100%);
     transition: transform 0.5s;
     color: black;
 }
-
-
 
 .over5 {
     position: relative;
@@ -469,13 +682,6 @@ footer {
 .over5:hover .azul5 {
     transform: translateX(0);
     transition: transform 0.5s;
-}
-.over5:hover .conflecha5 span {
-    transform: translateX(0);
-    margin: 0 3px;
-    transition: 0.5s;
-    margin: 0 30px 0 10px;
-    
 }
 .over5:hover .conflecha5{
     background-color: rgb(0, 208, 255);
