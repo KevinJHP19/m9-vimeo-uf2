@@ -805,69 +805,91 @@ margin-left: -100px !important;
     transition: 1s;
  }
 /*caso de uso */
-.titulocaso {
-    font-size: 40px;
-    margin-top: 10px;
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    word-spacing: 1px;
+
+
+#casos-de-uso {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    
+
+}
+#casos-de-uso  .row {
+    display: flex !important;
+    justify-content: center;
+    gap: 1px;
+    transition: all 0.5s ease-in-out !important;
 }
 
-.row img {
+#casos-de-uso  .col {
+    flex: 1;
+    min-width: 300px; 
+    transition: all 0.5s ease-in-out !important;
+    cursor: pointer;
+}
+
+
+#casos-de-uso .col img {
     height: 486px;
-    box-shadow: black 15px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out !important;
 }
 
-#card1:hover img {
-    display: block;
-    transform: scalex(2);
-    transition: transform 0.5s;
-    transform-origin: left;
+/* 🔹 Animaciones de expansión */
+#casos-de-uso  #card1:hover {
+    flex-grow: 2.5 !important;
 }
 
-#card1:hover .minidescipcion:nth-child(1) {
-    width: 200%;
-    background-color: red;
+#casos-de-uso  #card2:hover {
+    flex-grow: 2.5 !important;
 }
 
-#card2:hover {
-    transform: scalex(2);
-    transition: transform 0.5s;
+#casos-de-uso  #card3:hover {
+    flex-grow: 2.5 !important;
 }
 
-#card3:hover {
-    transform: scalex(2);
-    transition: transform 0.5s;
-    transform-origin: right;
+/* 🔹 Efectos en la imagen */
+#card1:hover img,
+#card2:hover img,
+#card3:hover img {
+    transform: scalez(2) !important;
 }
 
-#card1:hover .minidescripcion {
-    flex-wrap: wrap;
-    width: 200%;
-    transition: 1.5s;
+/* 🔹 Reducir tamaño de las otras tarjetas cuando una está en hover */
+#casos-de-uso .col:not(:hover) {
+    flex-grow: 0.5 !important;
+    
 }
 
-#card1:hover .titulo {
-    width: 200%;
-    flex-wrap: wrap;
-}
-
-.minidescipcion .titulo, .info {
+/* 🔹 Estilos para la descripción */
+#casos-de-uso  .minidescripcion {
+    height: 100%;
+    padding: 10px;
     text-align: start;
+    
+    transition: all 0.5s ease-in-out !important;
 }
 
-.minidescipcion {
-    border: solid 1px;
-}
 
-.titulo {
+
+
+.titulodescripcion {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
     text-align: start;
 }
-/*impulsado*/
+.titulocaso {
+    font-size: 40px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    word-spacing: 1px;
+}
+
+
 /*footer */
 footer {
     padding-bottom: 30px;
