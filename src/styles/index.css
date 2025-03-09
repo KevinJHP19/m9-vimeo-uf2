@@ -837,7 +837,7 @@ margin-left: -100px !important;
     transition: transform 0.5s ease-in-out !important;
 }
 
-/* 🔹 Animaciones de expansión */
+/*  Animaciones de expansión */
 #casos-de-uso  #card1:hover {
     flex-grow: 2.5 !important;
 }
@@ -850,20 +850,19 @@ margin-left: -100px !important;
     flex-grow: 2.5 !important;
 }
 
-/* 🔹 Efectos en la imagen */
+/* Efectos en la imagen */
 #card1:hover img,
 #card2:hover img,
 #card3:hover img {
     transform: scalez(2) !important;
 }
 
-/* 🔹 Reducir tamaño de las otras tarjetas cuando una está en hover */
+/*  Reducir tamaño de las otras tarjetas cuando una está en hover */
 #casos-de-uso .col:not(:hover) {
     flex-grow: 0.5 !important;
     
 }
 
-/* 🔹 Estilos para la descripción */
 #casos-de-uso  .minidescripcion {
     height: 100%;
     padding: 10px;
